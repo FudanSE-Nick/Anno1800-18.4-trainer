@@ -1,0 +1,204 @@
+Anno 1800 18.4 修改器可填物资清单（按仓库记录的分类标记分组）
+本表由运行中的游戏内存导出：以一座本人岛屿的仓库清单（206 条记录）为例，
+加上游戏档案里的资产名（maindata\data*.rda）解析而成。
+hotkeys.txt 里写 快捷键=编号|名称 即可；名额共 40 个（Ctrl+数字四组），满了可删改。
+
+=== 旧世界 / 海角物资（标记 15）：65 种可填（原始记录 66 条，容量 0 的不计）===
+   1010192  grain（上限 225）
+   1010193  beef（上限 225）
+   1010194  hops（上限 225）
+   1010195  potatoes（上限 225）
+   1010196  timber（上限 225）
+   1010197  wool（上限 225）
+   1010198  paprika（上限 225）
+   1010199  pigs（上限 225）
+   1010200  fish（上限 225）
+   1010201  clay（上限 225）
+   1010202  concrete（上限 225）
+   1010203  soap（上限 225）
+   1010204  brass（上限 225）
+   1010205  bricks（上限 225）
+   1010206  sewing machines（上限 225）
+   1010207  window（上限 225）
+   1010208  light bulbs（上限 225）
+   1010209  fur（上限 225）
+   1010210  sailcloth（上限 225）
+   1010211  chassis（上限 225）
+   1010213  bread（上限 225）
+   1010214  beer（上限 225）
+   1010215  goulash（上限 225）
+   1010216  schnapps（上限 225）
+   1010217  canned food（上限 225）
+   1010218  beams（上限 225）
+   1010219  steel（上限 225）
+   1010221  weapons（上限 225）
+   1010222  dynamite（上限 225）
+   1010223  advanced weapons（上限 225）
+   1010224  steam motors（上限 225）
+   1010225  steam carriages（上限 225）
+   1010226  coal（上限 225）
+   1010227  iron（上限 225）
+   1010228  quartz sand（上限 225）
+   1010229  zinc（上限 225）
+   1010230  copper（上限 225）
+   1010231  cement（上限 225）
+   1010232  salpeter（上限 225）
+   1010233  gold ore（上限 225）
+   1010234  tallow（上限 225）
+   1010235  flour（上限 225）
+   1010236  malt（上限 225）
+   1010237  basic clothes（上限 225）
+   1010238  sausage（上限 225）
+   1010239  sugar（上限 225）
+   1010240  cotton cloth（上限 225）
+   1010241  glass（上限 225）
+   1010242  inlay（上限 225）
+   1010243  carbon filament（上限 225）
+   1010245  high-wheeler（上限 225）
+   1010246  pocket watch（上限 225）
+   1010247  fur coats（上限 225）
+   1010248  phonographs（上限 225）
+   1010249  gold（上限 225）
+   1010250  jewelry（上限 225）
+   1010251  sugar cane（上限 225）
+   1010252  tobacco（上限 225）
+   1010253  cotton（上限 225）
+   1010254  cocoa（上限 225）
+   1010255  caoutchouc（上限 225）
+   1010256  pearls（上限 225）
+   1010257  rum（上限 225）
+   1010258  chocolate（上限 225）
+   1010259  cigars（上限 225）
+   容量 0（非物资，修改器不写）：1010566
+
+=== 新世界 / 恩贝萨 / 其它 DLC 物资（标记 1）：60 种可填（原始记录 65 条，容量 0 的不计）===
+   112518   scrap I（上限 225）
+   112520   scrap II（上限 225）
+   112523   scrap III（上限 225）
+   112694   caribou meat（上限 225）
+   112695   bear fur（上限 225）
+   112696   seal skin（上限 225）
+   112697   goose feathers（上限 225）
+   112698   husky（上限 225）
+   112699   whale oil（上限 225）
+   112700   parka（上限 225）
+   112701   sleeping bags（上限 225）
+   112702   oil lamps（上限 225）
+   112703   sleds（上限 225）
+   112704   sled frames（上限 225）
+   112705   pemmican（上限 225）
+   112706   gas（上限 225）
+   114356   Wanza Wood（上限 225）
+   114357   Sanga（上限 225）
+   114358   Salt（上限 225）
+   114359   Dried Meat（上限 225）
+   114364   Hibiscus（上限 225）
+   114365   Flax（上限 225）
+   114367   Teff（上限 225）
+   114368   Indigo（上限 225）
+   114369   Spice（上限 225）
+   114370   Honey（上限 225）
+   114371   Goat Milk（上限 225）
+   114390   Tea（上限 225）
+   114391   Linen（上限 225）
+   114401   Woven Clothes（上限 225）
+   114402   Mud Bricks（上限 225）
+   114404   Tapestries（上限 225）
+   114408   Spiced Teff Flour（上限 225）
+   114410   Spicy Stew（上限 225）
+   114414   Tobacco Pipe（上限 225）
+   114428   Leather Shoes（上限 225）
+   114430   Suits（上限 225）
+   114431   Telephones（上限 225）
+   115980   arctic scrap I（上限 225）
+   117698   Scriptures（上限 225）
+   117699   Lanterns（上限 225）
+   117701   Candles（上限 225）
+   117702   Paper（上限 225）
+   118724   Ceramics（上限 225）
+   118728   Seafood（上限 225）
+   120008   wood（上限 225）
+   120014   grapes（上限 225）
+   120016   champagne（上限 225）
+   120030   glasses（上限 225）
+   120031   coffee beans（上限 225）
+   120032   coffee（上限 225）
+   120033   fried bananas（上限 225）
+   120034   corn（上限 225）
+   120035   burrito（上限 225）
+   120036   alpaca wool（上限 225）
+   120037   bombin（上限 225）
+   120041   bananas（上限 225）
+   120042   fish oil（上限 225）
+   120043   ponchos（上限 225）
+   120044   felt（上限 225）
+   容量 0（非物资，修改器不写）：103866, 114427, 114429, 114433, 120021
+
+=== High Life 生活方式物资（标记 2，如 135186 Gum 口香糖、134623 Elevator 电梯）：21 种可填（原始记录 21 条，容量 0 的不计）===
+   133093   Cinnamon（上限 225）
+   133095   Coconut Butter（上限 225）
+   133097   Citrus Fruits（上限 225）
+   133181   Shampoo（上限 225）
+   133183   Jam（上限 225）
+   133185   Lemonade（上限 225）
+   133532   Souvenier（上限 225）
+   134616   Camphor（上限 225）
+   134623   Elevator（上限 225）
+   135086   Resin（上限 225）
+   135087   Cherry Wood（上限 225）
+   135129   LacquerColor（上限 225）
+   135130   Ethanol（上限 225）
+   135150   Celluloid（上限 225）
+   135186   Gum（上限 225）
+   135229   Biscuits（上限 225）
+   135230   Typewriter（上限 225）
+   135231   Toys（上限 225）
+   135232   Billiard（上限 225）
+   135233   Violin（上限 225）
+   135234   Cognac（上限 225）
+
+=== 新世界崛起等小号段物资（标记 0，如 5382 冰淇淋、5388 香水、5803 足球）；容量为 0 的邮件/报告等非物资已被自动排除：38 种可填（原始记录 53 条，容量 0 的不计）===
+   836      Bauxite（上限 225）
+   838      Aluminium（上限 225）
+   840      SA Gas（上限 225）
+   846      Bombs（上限 225）
+   847      Sea Mines（上限 225）
+   848      Flyers（上限 225）
+   849      Care Packages（上限 225）
+   850      Water Drop（上限 225）
+   1414     Lubricant（上限 225）
+   5380     squid（上限 225）
+   5381     jalea（上限 225）
+   5382     ice cream（上限 225）
+   5383     herbs（上限 225）
+   5384     nandu leather（上限 225）
+   5385     milk（上限 225）
+   5386     orchid（上限 225）
+   5387     ice cube（上限 225）
+   5388     perfume（上限 225）
+   5389     costume（上限 225）
+   5390     motor（上限 225）
+   5391     scooter（上限 225）
+   5392     film（上限 225）
+   5393     extinguisher（上限 225）
+   5394     cuffs（上限 225）
+   5395     ventilators（上限 225）
+   5397     medications（上限 225）
+   5398     minerals（上限 225）
+   5399     ammonia（上限 225）
+   5400     dyes（上限 225）
+   5401     nandu feathers（上限 225）
+   5803     soccer balls（上限 225）
+   6280     electric cable（上限 225）
+   6360     silver ore（上限 225）
+   6600     mezcal（上限 225）
+   24807    Dung（上限 225）
+   24808    Fertilizer（上限 225）
+   25131    Atole（上限 225）
+   25506    Tabasco（上限 225）
+   容量 0（非物资，修改器不写）：535, 536, 2038, 2524, 4267, 4268, 24320, 24821, 24824, 24837, 24846, 24850, 24851, 24852, 24863
+
+=== 其它（标记 4）：0 种可填（原始记录 1 条，容量 0 的不计）===
+   容量 0（非物资，修改器不写）：270042
+
+合计可填：184 种（每座岛一份记录，30 座岛共 5520 条）

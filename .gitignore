@@ -1,0 +1,16 @@
+# 运行时生成（每台机器不同，不进仓库）
+owned_areas.txt
+trainer.log
+
+# 本地诊断与临时产物
+_diag/
+__pycache__/
+*.pyc
+
+# 本地备份（例如 hotkeys 旧版本副本）
+hotkeys - *.txt
+
+# 编辑器 / IDE
+.vs/
+*.user
+*.swp

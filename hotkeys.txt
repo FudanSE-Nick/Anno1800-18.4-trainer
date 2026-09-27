@@ -1,0 +1,70 @@
+# Anno 1800 18.4 物资快捷键（v3.7）。保存文件后，运行中的修改器会自动重载，无需重启。
+#
+# 格式：快捷键=物资GUID|显示名称|可选标记
+#   左侧：0..9（= Ctrl+数字）、Ctrl+Shift+数字、Ctrl+Alt+数字、Ctrl+Shift+Alt+数字，共 40 个位置。
+#   右侧：物资 GUID + 显示名称（名称只用于窗口提示，可以随便改）+ 可选标记。
+#   一个快捷键和一个 GUID 各只能出现一次；删掉一行就取消该键；改错时旧键位继续有效。
+# 固定键位（不受本文件影响）：Ctrl+1 造船、Ctrl+- 影响力 +100、Ctrl+Alt+- 全部物资拉满并锁定、Ctrl+F12 恢复并退出。
+#
+# 本表所有物资键都带 |toggle，做成开关（全部 39 种一样）：
+#   按一次 → 各岛拉到当前上限；再按一次 → 各岛清空为 0；如此往复。
+#   判断依据是当前库存（所有岛都已在上限 → 这次清空，否则 → 这次拉满），所以不会失步。
+#   清空同样会记录"修改前的数量"，Ctrl+F12 仍可整体还原。
+#   注意：Ctrl+Alt+- 全部物资锁定开启时，被清空的物资会在 0.25 秒内被锁定补回上限。
+#   想让某个键只填一次（不参与清零），把那一行尾的 |toggle 删掉即可，保存后立刻生效。
+#
+# 本表全部 39 个 GUID 已用本机游戏文件 maindata\data0.rda 核对过（见 物资编号参考.txt），
+#   旧世界/海角物资（仓库分类标记 15）与 新世界/DLC 物资（分类标记 1）都支持。
+# 游戏窗口必须在最前面时按键。
+# 新岛：游戏中保存一次或等自动存档即可自动识别，不用重启修改器。
+#
+# 常用但本表没有的位置：原木 wood = 120008（40 个位置已全部占用，
+#   想加原木就把某一行换成 120008|原木|toggle，例如 Ctrl+Shift+Alt+2=120008|原木|toggle）。
+
+# Ctrl+数字：基础物资与造船
+0=1010192|谷物|toggle
+1=ship
+2=1010196|木材|toggle
+3=1010221|武器|toggle
+4=1010218|钢梁|toggle
+5=1010205|砖块|toggle
+6=1010207|窗户|toggle
+7=1010238|香肠|toggle
+8=1010223|重型武器|toggle
+9=1010217|罐头食品|toggle
+
+# Ctrl+Shift+数字：建筑与居民常用物资
+Ctrl+Shift+0=1010202|钢筋混凝土|toggle
+Ctrl+Shift+1=1010219|钢材|toggle
+Ctrl+Shift+2=1010200|鱼|toggle
+Ctrl+Shift+3=1010195|土豆|toggle
+Ctrl+Shift+4=1010213|面包|toggle
+Ctrl+Shift+5=1010214|啤酒|toggle
+Ctrl+Shift+6=1010203|肥皂|toggle
+Ctrl+Shift+7=1010241|玻璃|toggle
+Ctrl+Shift+8=1010210|帆|toggle
+Ctrl+Shift+9=1010226|煤炭|toggle
+
+# Ctrl+Alt+数字：工业与生活消费品
+Ctrl+Alt+0=1010227|铁|toggle
+Ctrl+Alt+1=1010231|水泥|toggle
+Ctrl+Alt+2=1010222|炸药|toggle
+Ctrl+Alt+3=1010224|蒸汽机|toggle
+Ctrl+Alt+4=1010206|缝纫机|toggle
+Ctrl+Alt+5=1010216|烈酒|toggle
+Ctrl+Alt+6=1010237|工作服|toggle
+Ctrl+Alt+7=1010208|电灯泡|toggle
+Ctrl+Alt+8=1010247|毛皮大衣|toggle
+Ctrl+Alt+9=1010250|珠宝|toggle
+
+# Ctrl+Shift+Alt+数字：新世界物资 + 补充物资
+Ctrl+Shift+Alt+0=120033|炸大蕉饼|toggle
+Ctrl+Shift+Alt+1=120035|玉米饼|toggle
+Ctrl+Shift+Alt+2=120043|披风|toggle
+Ctrl+Shift+Alt+3=120032|咖啡|toggle
+Ctrl+Shift+Alt+4=120037|礼帽|toggle
+Ctrl+Shift+Alt+5=1010257|朗姆酒|toggle
+Ctrl+Shift+Alt+6=1010258|巧克力|toggle
+Ctrl+Shift+Alt+7=1010259|雪茄|toggle
+Ctrl+Shift+Alt+8=120016|香槟|toggle
+Ctrl+Shift+Alt+9=1010193|牛肉|toggle

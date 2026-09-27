@@ -1,0 +1,43 @@
+Anno 1800 常见物资 GUID 参考
+============================
+
+格式：中文名 / 游戏英文名 = GUID
+谷物 / Grain = 1010192
+木材 / Timber = 1010196
+砖块 / Bricks = 1010205
+钢梁 / Steel Beams = 1010218
+钢材 / Steel = 1010219
+武器 / Weapons = 1010221
+重型武器 / Advanced Weapons = 1010223
+鱼 / Fish = 1010200
+土豆 / Potatoes = 1010195
+面包 / Bread = 1010213
+啤酒 / Beer = 1010214
+香肠 / Sausages = 1010238
+肥皂 / Soap = 1010203
+玻璃 / Glass = 1010241
+窗户 / Windows = 1010207
+帆 / Sails = 1010210
+煤炭 / Coal = 1010226
+铁 / Iron = 1010227
+水泥 / Cement = 1010231
+钢筋混凝土 / Reinforced Concrete = 1010202
+炸药 / Dynamite = 1010222
+蒸汽机 / Steam Motors = 1010224
+罐头 / Canned Food = 1010217
+缝纫机 / Sewing Machines = 1010206
+
+hotkeys.txt 已预置本表全部 24 种物资，无需手动填写。改键时写成 快捷键=GUID|中文名，例如 2=1010196|木材、Ctrl+Shift+8=1010210|帆；Ctrl+Alt+数字及 Ctrl+Shift+Alt+数字同样可用。保存后运行中的修改器会自动更新。旧版的 0..9 行继续兼容。
+注意原木 Wood = 120008 与木材 Timber = 1010196 不同。v3.7 起按"分类标记"识别仓库记录，现在**全部四类都支持**：15（旧世界/海角，1010xxx）、1（新世界/恩贝萨/其它 DLC，112xxx/114xxx/117xxx/118xxx/120xxx）、2（High Life 生活方式物资，133xxx/134xxx/135xxx）、0（新世界崛起等小号段物资，836/5380-5401/5803/6280/6360/6600/24807/24808/25131/25506 等）。判定同时要求"上限在 50~100000"，所以同一清单里上限为 0 的邮件、科考报告、情景计数等非物资会被自动排除（实测 535 Local Mail 为 0/30）。
+High Life（DLC09）生活方式物资（投资人需求，数量存在各岛仓库，可填满/清零）：**135186 Gum = 口香糖**、**134623 Elevator = 电梯（物资）**、135231 Toys 玩具、135232 Billiard 台球桌、135150 Celluloid 赛璐珞、135130 Ethanol 乙醇、135233 Violin 小提琴、135234 Cognac 干邑、135230 Typewriter 打字机、135229 Biscuits 饼干、135129 LacquerColor 漆色、135087 Cherry Wood 樱桃木、135086 Resin 树脂、134616 Camphor 樟脑、133532 Souvenier 纪念品、133185 Lemonade 柠檬水、133183 Jam 果酱、133181 Shampoo 洗发水、133097 Citrus Fruits 柑橘、133095 Coconut Butter 椰油、133093 Cinnamon 肉桂。
+注意"电梯"有两个不同东西：**物资 Elevator = 134623**（High Life，可填）与**物品 Freight/Safety/Siemens Elevator = 190876/190877/190878**（GuildhouseItem，插在工会等建筑里，修改器不填）。
+另有一份由游戏内存导出的完整可填清单：见 可填物资清单-完整.txt（184 种，含编号与各岛上限）。
+新世界与 DLC 物资常用 GUID：120008 原木、120016 香槟、120032 咖啡、120033 炸大蕉饼、120035 玉米饼、120037 礼帽、120043 披风；112xxx / 114xxx / 117xxx / 118xxx 段也属于这一类（如 112523、114404），hotkeys.txt 里可以直接填。
+编号出处与核对：上表 24 种的编号来自 https://github.com/Mathew3000/anno1800_python_api_documentation/blob/master/asset_list.py ；新世界那几种在 v3.6 就已经写在 hotkeys.txt 里，出处没有记录。v3.7 起不再依赖外部来源：已用本机游戏文件 maindata\data0.rda 逐个核对（GUID → 资产名），全部吻合：
+    1010192 grain、1010193 beef、1010195 potatoes、1010196 timber、1010200 fish、1010202 concrete、1010203 soap、1010205 bricks、
+    1010206 sewing machines、1010207 window、1010208 light bulbs、1010210 sailcloth、1010213 bread、1010214 beer、1010216 schnapps、
+    1010217 canned food、1010218 beams、1010219 steel、1010221 weapons、1010222 dynamite、1010223 advanced weapons、1010224 steam motors、
+    1010226 coal、1010227 iron、1010231 cement、1010237 basic clothes、1010238 sausage、1010241 glass、1010247 fur coats、1010250 jewelry、
+    1010257 rum、1010258 chocolate、1010259 cigars、120008 wood、120016 champagne、120032 coffee、120033 fried bananas（中文版即炸大蕉饼）、
+    120035 burrito、120037 bombin、120043 ponchos；另有 1010017 Money、1010190 Influence（修改器用来定位金钱与影响力）。
+仓库列表里还会出现 133xxx-135xxx、270xxx 以及很小的 GUID（如 535、6261），它们不是本表覆盖的物资，修改器不会写入。

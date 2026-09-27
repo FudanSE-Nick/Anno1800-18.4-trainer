@@ -1,0 +1,8 @@
+Reference material used while verifying the game structures:
+- Grain asset GUID: https://github.com/Mathew3000/anno1800_python_api_documentation/blob/master/asset_list.py
+- Grain stock record layout: https://github.com/bbfox0703/Mydev-Cheat-Engine-Tables/blob/main/Anno%201800/Anno1800.CT
+- Ship construction timer signature: https://www.playground.ru/anno_1800/cheat/anno_1800_tablitsa_dlya_cheat_engine_upd_04_06_2023_squall0833-1261771
+- Read-only save parser (MIT): https://github.com/EMRECAN-1907/anno1800-save-tools
+Weapons 1010221 and Steel Beams 1010218: https://github.com/Mathew3000/anno1800_python_api_documentation/blob/master/asset_list.py
+Influence GUID 1010190 and runtime total/available field offsets: https://opencheattables.com/viewtopic.php?p=2796
+The shipped implementation additionally validates the exact local executable SHA256, the player resource-object vtable RVA, a complete six-node resource list, and a unique nonzero player candidate before writing.

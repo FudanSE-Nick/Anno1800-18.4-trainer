@@ -1,0 +1,5 @@
+# 这是 Windows 专用工具，文件按字节原样保存，不做换行符转换。
+* -text
+
+*.exe binary
+*.pyc binary
